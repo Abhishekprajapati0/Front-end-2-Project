@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bg change</title>
+	<style type="text/css">
+		
+
+		
+		button{
+		margin-left: 50%;
+		}
+	</style>
+
+</head>
+<body>
+<button type="button" id="change">Change</button>
+
+<script type="text/javascript">
+	var change =  document.getElementById("change");
+	 change.addEventListener('click', function (){
+	 	var colors =  ['red', 'blue','green','pink','orange'];
+
+	 	var random= colors[Math.floor(Math.random()*colors.length)];
+
+	 	document.body.style.backgroundColor= random;
+	 });
+</script>
+
+
+</body>
+</html>

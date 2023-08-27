@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz App</title>
+	<style type="text/css">
+		div{
+			width: 500px;
+			height: auto;
+			border: 2px black solid;
+			padding: 20px;
+			background-color:blue; 
+			margin: auto;
+		}
+		div > h2{
+			text-transform: uppercase;
+			font-family: fantasy;
+			border:2px white double;
+			font-size: 35px;
+			text-align: center;
+		}
+
+		button:hover {
+			background: blue;
+			color: white;
+			border-radius: 10px;
+
+		}
+
+		button{
+			border-radius: 10px;
+			text-transform: uppercase;
+		}
+
+		div > h1{
+			background: blue;
+			color: yellow;
+			font-family: sans-serif;
+			text-align: center;
+		}
+		div b{
+			color: white;
+		}
+		div{
+			color: yellow;
+		}
+
+		
+	</style>
+</head>
+<body>
+	
+
+	<div>
+		<h2>Quzi App</h2>
+		<hr>
+		<br>
+		<h1 id ffk></h1>
+
+		<h1>Mathmatical Questions</h1>
+<b>Q1: What is value 5+9 ?</b><br>
+<input type="radio" name="text1" id="carrect1">14<br>
+<input type="radio" name="text1">6<br>
+<input type="radio" name="text1">7<br>
+<input type="radio" name="text1">5<br>
+<b>Q2: What is value 50/10 ?</b><br>
+<input type="radio" name="text2" >2<br>
+<input type="radio" name="text2" >3<br>
+<input type="radio" name="text2" >7<br>
+<input type="radio" name="text2" id="carrect2">5<br>
+<b>Q3: What is value 6*3 ?</b><br>
+<input type="radio" name="text3" >6<br>
+<input type="radio" name="text3" id="carrect3">18<br>
+<input type="radio" name="text3" >8<br>
+<input type="radio" name="text3" >4<br>
+<b>Q4: What is value 4+3 ?</b><br>
+<input type="radio" name="text4" id="carrect4">7<br>
+<input type="radio" name="text4" >8<br>
+<input type="radio" name="text4" >4<br>
+<input type="radio" name="text4" >3<br>
+<b>Q5: What is value 2+1+2 ?</b><br>
+<input type="radio" name="text5" >10<br>
+<input type="radio" name="text5" >-1<br>
+<input type="radio" name="text5" id="carrect5">5<br>
+<input type="radio" name="text5" >0<br>
+<b>Q6: What is value 55+5?</b><br>
+<input type="radio" name="text6">-5<br>
+<input type="radio" name="text6"  id="carrect6" >60<br>
+<input type="radio" name="text6" >3.0<br>
+<input type="radio" name="text6" >5<br>
+<b>Q7: How many letters in A to Z ?</b><br>
+<input type="radio" name="text7" >21<br>
+<input type="radio" name="text7">4<br>
+<input type="radio" name="text7">28<br>
+<input type="radio" name="text7" id="carrect7">26<br>
+
+<b>Q8: What is value 20/10 ?</b><br>
+<input type="radio" name="text8" id="carrect8">2<br>
+<input type="radio" name="text8">3<br>
+<input type="radio" name="text8">7<br>
+<input type="radio" name="text8">5<br>
+
+<b>Q9: What is value 3+2 ?</b><br>
+<input type="radio" name="text9" >7<br>
+<input type="radio" name="text9" >8<br>
+<input type="radio" name="text9" id="carrect9">5<br>
+<input type="radio" name="text9" >3<br>
+<b>Q10: What is value 2+8 ?</b><br>
+<input type="radio" name="text10" id="carrect10">10<br>
+<input type="radio" name="text10" >12<br>
+<input type="radio" name="text10" >15<br>
+<input type="radio" name="text10" >6<br>
+<br>
+
+<button type="button" onclick="result()">SubmitQuiz</button>
+
+
+</div>
+
+</body>
+<script type="text/javascript">
+	function result(){
+	var scorr = 0;
+
+	if(document.getElementById("carrect1").checked){
+		scorr++;
+	};
+	if(document.getElementById("carrect2").checked){
+		scorr++;
+	};
+	if(document.getElementById("carrect3").checked){
+		scorr++;
+	};
+	if(document.getElementById("carrect4").checked){
+		scorr++;
+	};
+	if(document.getElementById("carrect5").checked){
+		scorr++;
+	};
+	if(document.getElementById("carrect6").checked){
+		scorr++;
+	};
+	if(document.getElementById("carrect7").checked){
+		scorr++;
+	};
+	if(document.getElementById("carrect8").checked){
+		scorr++;
+	};
+	if(document.getElementById("carrect9").checked){
+		scorr++;
+	};
+	if(document.getElementById("carrect10").checked){
+		scorr++;
+	};
+	 
+	  
+		document.write(`<h1>Your score : ${scorr}`);
+
+
+
+}
+	
+</script>
+</html>

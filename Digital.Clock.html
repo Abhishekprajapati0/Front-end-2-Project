@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Clock</title>
+	<style type="text/css">
+		.main{
+			width: 200px;
+			height: 200px;
+			border: 2px black solid;
+			margin: auto;
+			background: radial-gradient(black,grey,black);
+		}
+		.main h1{
+			text-align: center;
+			padding: 10px;
+			color: white;
+		}
+		.main > h2{
+			text-align: center;
+			text-transform: uppercase;
+			background: blue;
+			color: gold;
+		}
+	</style>
+</head>
+<body onload="showtime()">
+	<div class="main">
+		<h2>Clock</h2>
+		<h1></h1>
+	</div>
+	<script>
+		function showtime(){
+			var d = new Date();
+			var h = d.getHours();
+			var m = d.getMinutes();
+			var s = d.getSeconds();
+			var section = "AM";
+
+			h = h < 10 ? "0" +h:h;
+			m = m < 10 ? "0" +m:m;
+			s = s < 10 ? "0" +s:s;
+
+			var time = h+ ":" + m + ":" + s + ":" +section;
+			document.getElementsByTagName("h1")[0].innerHTML= time;
+
+			 setTimeout(showtime ,1000);
+
+
+		}
+	</script>
+
+</body>
+</html>
